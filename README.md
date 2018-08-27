@@ -15,3 +15,12 @@ Take a few minutes to read about some of the ways one can pass additional option
 ---
 
 ## Forcing Git Commits
+
+
+
+## Resources
+
+- [`git` documentation](https://git-scm.com/doc)
+- [`git push --force-with-lease` documentation](https://git-scm.com/docs/git-push#git-push---no-force-with-lease)
+- [`git push --force` documentation](https://git-scm.com/docs/git-push#git-push---force)
+- [--force considered harmful; understanding git's --force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
