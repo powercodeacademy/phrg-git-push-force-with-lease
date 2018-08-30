@@ -38,9 +38,9 @@ Rewrite history? -- Do not worry about this now, we will talk more about it in l
 
 ## Forcing Git Commits
 
-To get our commits successfully `push`ed up to Github, we will need to speficy a `force` option with the command. Specifically, `--force-with-lease`. If our commits have rewritten history for only commits that we own, `--force-with-lease` will update Github with our new commits. Hooray! And happily, if `--force-with-lease` detects that there are untracked commits by another contributor on our branch, it will fail again. This informs us that we need to pull a fresh copy of the project and resolve any conflicts.
+To get our commits successfully `push`ed up to Github, we will need to specify a `force` option with the command. Enter `--force-with-lease`. If we have rewritten history for only our own commits, `--force-with-lease` will update Github with our new ones. Hooray! And happily, if `--force-with-lease` detects that there are untracked commits by another contributor on our branch, it will fail once again. This informs us that we need to `git pull` a fresh copy of the project and resolve any conflicts.
 
-`--force-with-lease` is the best option to use here because it will save us from overwriting someone else's work. The less safe version for this command is simply `--force`, but we run the risk of messing up our project using it.
+`--force-with-lease` is the best option to use here because it will save us from overwriting someone else's work. The less safe version for this command is simply `--force`, but we run the risk of messing up our project when we use it.
 
 Here is `--force-with-lease` in action for our last failed `push`:
 
@@ -61,7 +61,7 @@ Success!
 
 ## Still unclear?
 
-Force pushing commits with `git` starts to become more clear when we encounter scenarios that require it. And even after that, it takes a good amount of experience to get comfortable with it. For now, know that `--force-with-lease` is a option when you encounter a failed `git push`.
+Force pushing commits with `git` starts to make more sense when we encounter scenarios that require its use. Even after that, it still takes a good amount of experience to get comfortable using `--force-with-lease`. For now, know that forcing a commit is a option when you encounter a failed `git push`.
 
 ## Resources
 
